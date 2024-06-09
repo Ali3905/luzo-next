@@ -1,34 +1,12 @@
-import Link from "next/link"
-
+"use client"
 import React, { useEffect, useState } from 'react'
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
+import Link from "next/link"
+import { useRouter } from "next/navigation";
 
 const Loading = () => {
-  const pathname = usePathname
+  
   const router = useRouter()
   const [device, setDevice] = useState('');
-
-  // useEffect(() => {
-  //   console.log({ isWindows, isAndroid, isIOS, isMobile });
-  //   if (isWindows) {
-  //     setInterval(() => {
-  //       navigate("/")
-  //     }, 8000);
-  //   }
-  //   if (isAndroid) {
-  //     setInterval(() => {
-  //       navigate("https://play.google.com/store/apps/details?id=com.salon_surf" + (pathname.toString() == "" ? "" : "&") + pathname.toString())
-  //     }
-  //       , 1500);
-  //   }
-  //   if (isIOS) {
-  //     setInterval(() => {
-  //       navigate("https://apps.apple.com/in/app/salonsurf/id1594592604" + (pathname.toString() == "" ? "" : "?") + pathname.toString())
-  //     }
-  //       , 1500);
-  //   }
-  // }, []);
 
   useEffect(() => {
 
@@ -66,9 +44,9 @@ const Loading = () => {
       // Check for iOS (if platform didn't cover it)
       if (/iPhone|iPad|iPod/.test(userAgent) && !window.MSStream) {
         setInterval(() => {
-                window.location.assign("https://apps.apple.com/in/app/salonsurf/id1594592604" + "?")
-              }
-                , 1500);
+          window.location.assign("https://apps.apple.com/in/app/salonsurf/id1594592604" + "?")
+        }
+          , 1500);
         return 'iOS';
       }
 
@@ -87,8 +65,8 @@ const Loading = () => {
       <p className='text-[16px]'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
       <p className='text-[16px]'>Redirecting</p>
       <div className='flex flex-row gap-[10px] pt-[10px] cursor-pointer'>
-        {/* <Link target="_blank" to='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src='/img/appstore.webp' alt='app store' width={150} /></Link> */}
-        <Link target="_blank" to='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><img src='/img/playstore.webp' alt='playstore' width={150} /></Link>
+        {/* <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src='/img/appstore.webp' alt='app store' width={150} /></Link> */}
+        <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><img src='/img/playstore.webp' alt='playstore' width={150} /></Link>
       </div>
     </div>
   }
@@ -99,8 +77,8 @@ const Loading = () => {
       <p className='text-[16px]'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
       <p className='text-[16px] font-semibold'>Redirecting...</p>
       <div className='flex flex-row gap-[10px] pt-[10px] cursor-pointer'>
-        <Link target="_blank" to='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src='/img/appstore.webp' alt='app store' width={150} /></Link>
-        {/* <Link target="_blank" to='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><img src='/img/playstore.webp' alt='playstore' width={150} /></Link> */}
+        <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src='/img/appstore.webp' alt='app store' width={150} /></Link>
+        {/* <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><img src='/img/playstore.webp' alt='playstore' width={150} /></Link> */}
       </div>
     </div>
   }
@@ -112,8 +90,8 @@ const Loading = () => {
       <h1 className='text-[30px]'>LUZO</h1>
       <p className='text-[16px]'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
       <div className='flex flex-row gap-[10px] pt-[10px] cursor-pointer'>
-        <Link target="_blank" to='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src='/img/appstore.webp' alt='app store' width={150} /></Link>
-        <Link target="_blank" to='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><img src='/img/playstore.webp' alt='playstore' width={150} /></Link>
+        <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src='/img/appstore.webp' alt='app store' width={150} /></Link>
+        <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><img src='/img/playstore.webp' alt='playstore' width={150} /></Link>
       </div>
     </div>
   )

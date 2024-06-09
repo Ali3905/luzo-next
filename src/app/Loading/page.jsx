@@ -2,7 +2,7 @@
 import Loading from './Loading'
 
 
-const index = () => {
+const page = () => {
   return (
     <div>
       <Loading />
@@ -10,4 +10,4 @@ const index = () => {
   )
 }
 
-export default index
+export default page

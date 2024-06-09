@@ -1,10 +1,8 @@
-import Footer from "../../components/Footer"
-import Navbar from "../../components/Navbar"
+
 
 export const Privacy = () => {
   return (
     <>
-      <Navbar />
       <div className="mt-[100px] px-[10px] sm:px-[120px]">
            <h1 className="text-[40px] font-medium">Privacy Policy</h1>
            <div className="my-[30px] flex flex-col gap-[20px] text-[16px]">
@@ -46,7 +44,6 @@ export const Privacy = () => {
 
 
       </div>
-      <Footer />
     </>
   )
 }
