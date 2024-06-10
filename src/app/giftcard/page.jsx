@@ -9,13 +9,7 @@ import Footer from "@/components/Footer"
 const Giftcard = () => {
 
 
-  <Head>
-    <head>
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-        <script type="module" src="/src/main.jsx"></script>
-        
-      </head>
-  </Head>
+  
 
   return (
     <div>

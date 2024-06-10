@@ -79,7 +79,7 @@ const BuyGiftcard = () => {
                         <textarea placeholder="Prompt for yourself" className="border w-[295px]  sm:w-[442px] px-[10px] rounded-[10px] pb-[80px]" {...register("description")} />
                     </div>
 
-                    <button className="border mt-[10px]  bg-[#42a5f5] text-[white] rounded-[10px] px-[20px] py-[10px]" type="submit">Add receiver's details</button>
+                    <button className="border mt-[10px]  bg-[#42a5f5] text-[white] rounded-[10px] px-[20px] py-[10px]" type="submit">Add receiver&apos;s details</button>
                 </div>
 
             </form> :

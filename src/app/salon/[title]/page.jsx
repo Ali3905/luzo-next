@@ -223,7 +223,7 @@ const Salon = () => {
                         <h1 className="font-medium text-[50px] py-[20px] sm:mt-[10px]">{salon.name}</h1>
                         <div>
                             {salon?.description.map((ele) => {
-                                return <p className="text-[14px] sm:leading-[30px] my-[20px]">{ele}</p>
+                                return <p className="text-[14px] sm:leading-[30px] my-[20px]" key={ele}>{ele}</p>
 
                             })}
                         </div>
@@ -234,7 +234,7 @@ const Salon = () => {
                         <div className="flex sm:flex-row flex-col flex-wrap gap-[30px]">
                             {
                                 salon.branches.map((ele) => {
-                                    return <div className="border sm:w-[30%] text-[14px] border-[#B9B9B9] rounded px-[30px] py-[8px]  shadow-sm flex gap-[20px] items-center">
+                                    return <div key={ele} className="border sm:w-[30%] text-[14px] border-[#B9B9B9] rounded px-[30px] py-[8px]  shadow-sm flex gap-[20px] items-center">
                                         <img src="/img/pin.svg" height='20' width='20' /><p className="py-[10px]">{ele}</p></div>
                                 })
                             }

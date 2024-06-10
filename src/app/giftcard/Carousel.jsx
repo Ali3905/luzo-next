@@ -5,6 +5,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
+import Image from 'next/image';
 
 
 
@@ -38,47 +39,47 @@ const Carousel = () => {
              
              <SwiperSlide>
                     <div className='flex  gap-[10px]'>
-                        <img src="icons/1.png" alt="img"  width='650' className="rounded-2xl"/>                      
+                        <Image src="/icons/1.png" alt="img"  width={650} height={200} className="rounded-2xl"/>                      
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/2.png" alt="img"  width='650' className="rounded-2xl"/>
+                        <Image src="/icons/2.png" alt="img"  width={650} height={200} className="rounded-2xl"/>
                     </div>
             </SwiperSlide>
                  <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/3.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/3.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/4.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/4.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/6.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/6.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/7.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/7.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/8.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/8.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/9.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/9.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
             <SwiperSlide>
                     <div className='flex flex-row gap-[10px]'>
-                        <img src="icons/10.png" alt="img"  width='650' className="rounded-2xl"/>         
+                        <Image src="/icons/10.png" alt="img"  width={650} height={200} className="rounded-2xl"/>         
                     </div>
             </SwiperSlide>
 

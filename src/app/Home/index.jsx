@@ -1,4 +1,4 @@
-
+"use client"
 import SalonCrousal from './SalonCrousal'
 import PopularSalonsCrousal from './PopularSalonsCrousal'
 import Footer from '../../components/Footer'
@@ -14,7 +14,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {Helmet} from "react-helmet";
 
-const home = () => {
+const Home = () => {
 
   const [showDownload, setShowDownload] = useState(true)
 
@@ -48,4 +48,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home

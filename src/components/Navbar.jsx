@@ -66,7 +66,7 @@ const Navbar = () => {
                     <ul className="flex gap-[20px] cursor-pointer">
                          {
                               navItems.map((item)=>{
-                                   return <li className={`${pathname===item.link && isScrolled && pathname !== "/" ?"text-blue-500" : ""}`}><Link href={item.link}>{item.label}</Link></li>
+                                   return <li key={item.link} className={`${pathname===item.link && isScrolled && pathname !== "/" ?"text-blue-500" : ""}`}><Link href={item.link}>{item.label}</Link></li>
                               })
                          }
                     </ul>
@@ -86,7 +86,7 @@ const Navbar = () => {
                     <ul className="flex text-black flex-col gap-[20px] cursor-pointer border-b-2 py-4 px-12">
                     {
                               navItems.map((item)=>{
-                                   return <li className={`${pathname===item.link?"text-blue-500" : ""}`}><Link href={item.link}>{item.label}</Link></li>
+                                   return <li key={item.link} className={`${pathname===item.link?"text-blue-500" : ""}`}><Link href={item.link}>{item.label}</Link></li>
                               })
                          }
                     </ul>

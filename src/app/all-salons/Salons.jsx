@@ -1,3 +1,4 @@
+import Image from "next/image"
 import SalonCard from "./SalonCard"
 
 const salons = [
@@ -122,18 +123,18 @@ const Salons = () => {
   return (
     <div className="px-[10px] sm:px-[120px] mt-[100px]">
       <h1 className="font-medium text-[30px]">All Salons</h1>
-      <div className="flex flex-wrap   gap-[30px] cursor-pointer py-[20px]">
+      <div className="flex flex-wrap   gap-[20px] cursor-pointer py-[20px]">
        {
-        salons.map((salon)=>{
-          return <SalonCard salon={salon} />
+        salons.map((salon, i)=>{
+          return <SalonCard salon={salon} key={i} />
         })
        }
 
       </div>
       <h1 className="font-medium sm:text-[28px] text-[20px] text-center">To view more salons download the app now!</h1>
       <div className="flex items-center   justify-center gap-[20px] py-[20px]">
-        <img src="/img/appstore.webp" alt="img" width='150' />
-        <img src="/img/playstore.webp" alt="img" width='150' />
+        <Image src="/img/appstore.webp" alt="img" width={150} height={60} />
+        <Image src="/img/playstore.webp" alt="img" width={150} height={60} />
       </div>
     </div>
   )
