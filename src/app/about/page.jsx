@@ -1,6 +1,8 @@
 
 import Hero from "./Hero"
 import AboutLuzo from "./AboutLuzo"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 
 const About = () => {
@@ -9,9 +11,10 @@ const About = () => {
   return (
     <div>
 
-
+        <Navbar />
         <Hero />
         <AboutLuzo />
+        <Footer />
         
     </div>
   )

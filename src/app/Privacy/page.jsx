@@ -1,8 +1,15 @@
+import Footer from "@/components/Footer"
+import Navbar from "@/components/Navbar"
+
 const { Privacy } = require("./Privacy")
 
 const page = () => {
   return (
-    <Privacy />
+    <>
+      <Navbar />
+      <Privacy />
+      <Footer />
+    </>
   )
 }
 

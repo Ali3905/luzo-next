@@ -29,7 +29,7 @@ const SalonCrousal = () => {
                 }}
                 breakpoints={{
                     // When window width is <= 640px (for mobile devices)
-                    400: {
+                    640: {
                         slidesPerView: 4,
                     },
                 }}

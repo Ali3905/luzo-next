@@ -16,9 +16,7 @@ export const metadata = {
 export default function AboutLayout({ children }) {
   return (
     <html lang="en">
-      <Navbar />
       <body className={inter.className}>{children}</body>
-      <Footer />
     </html>
   );
 }

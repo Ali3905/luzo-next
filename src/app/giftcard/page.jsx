@@ -1,9 +1,9 @@
-// import Navbar from "../../components/Navbar"
-// import Footer from "../../components/Footer"
 import Head from "next/head"
 import BuyGiftcard from "./BuyGiftcard"
 import Carousel from "./Carousel"
 import HowToUse from "./HowToUse"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 
 const Giftcard = () => {
@@ -19,11 +19,11 @@ const Giftcard = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Carousel />
       <BuyGiftcard />
       <HowToUse />
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   )

@@ -19,7 +19,7 @@ const ContactUsForm = () => {
     try {
       const res = await axios({
         method: "post",
-        url: `${import.meta.env.VITE_SERVER_HOST}/api/v1/sendMail`,
+        url: `${process.env.NEXT_PUBLIC_SERVER_HOST}/api/v1/sendMail`,
         params: { ...data },
       });
       console.log(res);

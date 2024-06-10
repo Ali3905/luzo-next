@@ -8,7 +8,7 @@ const Footer = () => {
         <ul className="flex flex-col gap-[20px]">
           <h1 className="text-[16px] font-semibold ">Pages</h1>
           <Link href='/about'> <li>About Us</li></Link>
-          <Link href='/contact'> <li>Get In hrefuch</li></Link>
+          <Link href='/contact'> <li>Get In Touch</li></Link>
           <Link href='/privacy'><li>Privacy Policy</li></Link>
           <Link href='/terms'><li>Terms of Service</li></Link>
         </ul>

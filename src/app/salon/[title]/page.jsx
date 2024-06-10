@@ -1,5 +1,7 @@
 "use client"
 import DownloadLinks from '@/components/DownloadLinks'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
@@ -7,7 +9,7 @@ const Salon = () => {
 
     const [salon, setSalon] = useState(null)
     const { title } = useParams()
-    
+
 
     // const pathname = usePathname()
 
@@ -211,6 +213,7 @@ const Salon = () => {
     }, [title])
     return (
         <>
+            <Navbar />
             {salon !== null ? <div>
                 {/* <Navbar /> */}
                 <div>
@@ -242,6 +245,7 @@ const Salon = () => {
                 </div>
                 <DownloadLinks className={"items-center justify-center mb-[60px] py-[15px]"} />
             </div> : "Loading..."}
+            <Footer />
         </>
     )
 }

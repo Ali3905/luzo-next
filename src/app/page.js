@@ -1,22 +1,20 @@
 
 import SalonCrousal from './Home/SalonCrousal'
 import PopularSalonsCrousal from './Home/PopularSalonsCrousal'
-// import Footer from '@/app/components/Footer'
 import Discount from './Home/Discount'
 import Trust from './Home/Trust'
 import Testimonial from './Home/Testimonial'
 import HeaderCrousal from './Home/HeaderCrousal'
 import Banner from './Home/Banner'
 import HowToUse from './Home/HowToUse'
-// import { X } from 'lucide-react'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const Home = () => {
-
-  // const [showDownload, setShowDownload] = useState(true)
-
   return (
     <div >
+      <Navbar />
       <HeaderCrousal />
       <SalonCrousal />
       <Discount />
@@ -25,7 +23,7 @@ const Home = () => {
       <Trust />
       <Testimonial />
       <Banner />
-      {/* <Footer /> */}
+      <Footer />
 
       <div className={`bg-black w-full fixed bottom-[1%] z-20 text-white flex items-center justify-between gap-[2px] py-4 px-2 ${true?"visible":"invisible"} transition sm:hidden`}>
         {/* <button onClick={()=>setShowDownload(false)}><X/></button> */}
