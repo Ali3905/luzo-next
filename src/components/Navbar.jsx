@@ -5,6 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -61,7 +62,7 @@ const Navbar = () => {
 
      return (
           <nav className={`sm:px-[80px] px-[10px] flex justify-between h-[80px] items-center fixed top-0 w-full z-20 ${isScrolled ? "bg-white text-black" : "bg-transparent sm:text-white"} transition-all duration-[350ms]`}>
-               <Link href='/'>  <img src="/img/icon.webp" alt="logo icon" width="50" height="50" className="" /></Link>
+               <Link href='/'>  <Image src="/img/icon.webp" alt="logo icon" width="50" height="50" className="" /></Link>
                <div className="invisible sm:visible">
                     <ul className="flex gap-[20px] cursor-pointer">
                          {
@@ -73,13 +74,13 @@ const Navbar = () => {
                </div>
                <div className="lg:hidden md:flex flex-col ">
                     <button onClick={toggleNavbar}>
-                         {!mobileDrawerOpen && <Menu />}
+                         {!mobileDrawerOpen && <Menu className="text-white" />}
                     </button>
                </div>
                {/* {mobileDrawerOpen && ( */}
                <div className={`absolute top-0 ${!mobileDrawerOpen ? "invisible left-[-100%]" : "left-0 visible"} transition-all duration-[350ms] z-20 bg-white w-[90%] py-12  flex flex-col  lg:hidden h-screen`}>
                     <div className="flex justify-between pb-4 border-b-2 px-12">
-                         <img src="/img/icon.webp" alt="logo icon" width="40" height="40" className="" />
+                         <Image src="/img/icon.webp" alt="logo icon" width="40" height="40" className="" />
                          <X onClick={toggleNavbar} />
 
                     </div>

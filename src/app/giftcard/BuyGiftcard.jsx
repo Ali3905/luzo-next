@@ -86,7 +86,7 @@ const BuyGiftcard = () => {
                 <form onSubmit={handleSubmit(handleOpenModal)} className="flex flex-col justify-between px-[20px] sm:px-[50px]">
 
                     <div className="flex flex-col">
-                        <h1 className="font-medium my-[20px]">Receiver's Name</h1>
+                        <h1 className="font-medium my-[20px]">Receiver&apos;s Name</h1>
                         <input type="text" placeholder="Receiver Name" className="border  px-[10px] rounded-[10px] py-[10px]" {...register("receiverName", { required: "Please enter receiver name" })} />
                         {errors.receiverName && <span className="text-red-500">{errors.receiverName.message}</span>}
                     </div>

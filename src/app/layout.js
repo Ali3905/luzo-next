@@ -19,9 +19,9 @@ export const metadata = {
     url: `https://luzo.app/`,
   },
   icons: {
-    icon: '/appicon/favicon-32x32.png',
-    apple: "/appicon/apple-touch-icon.png",
-    shortcut: "/appicon/favicon-32x32.png",
+    icon: '/img/icon.webp',
+    apple: "/img/icon.webp",
+    shortcut: "/img/icon.webp",
     other: [{
       url: "/appicon/safari-pinned-tab.svg",
       type: "image/svg+xml",
@@ -29,20 +29,20 @@ export const metadata = {
       rel: "mask-icon"
     },
     {
-      url: "/appicon/favicon-16x16.png",
-      type: "image/png",
+      url: "/img/icon.webp",
+      type: "image/webp",
       sizes: "16x16",
       rel: "icon"
 
     }, {
-      url: "/appicon/favicon-32x32.png",
+      url: "/img/icon.webp",
       type: "image/png",
       sizes: "32x32",
       rel: "icon"
 
     },
     {
-      url: "/appicon/android-chrome-96x96.png",
+      url: "/img/icon.webp",
       type: "image/png",
       sizes: "96x96",
       rel: "icon"

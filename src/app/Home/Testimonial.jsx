@@ -5,7 +5,7 @@ import { Star } from 'lucide-react';
 
 // Import Swiper styles
 import 'swiper/css';
-
+import Image from 'next/image';
 
 
 const Testimonial = () => {
@@ -70,7 +70,7 @@ const Testimonial = () => {
               <SwiperSlide>             
                 <div className="text-white">
                       <div className="flex flex-row gap-[20px] items-center mb-[30px] ">
-                        <img src="/testimonals/1.webp" alt="img" width="60" className="border border-none rounded-full" />
+                        <Image src="/testimonals/1.webp" alt="Image" width={60} height={60} className="border border-none rounded-full" />
                         <div>
                             <h3>Rinku jain</h3>
                             <p>43 yo | Mumbai<span className='flex gap-[2px] h-10 w-[85px]'>
@@ -103,7 +103,7 @@ const Testimonial = () => {
              <SwiperSlide>             
                 <div className="text-white">
                       <div className="flex flex-row gap-[20px] items-center mb-[30px] ">
-                        <img src="/testimonals/2.webp" alt="img" width="60" className="border border-none rounded-full" />
+                        <Image src="/testimonals/2.webp" alt="Image" width={60} height={60}  className="border border-none rounded-full" />
                         <div>
                             <h3>Jehan</h3>
                             <p>31 yo | Mumbai <span className='flex gap-[2px] h-10 w-[85px]'>
@@ -137,7 +137,7 @@ const Testimonial = () => {
              <SwiperSlide>             
                 <div className="text-white">
                       <div className="flex flex-row gap-[20px] items-center mb-[30px] ">
-                        <img src="/testimonals/3.webp" alt="img" width="60" className="border border-none rounded-full" />
+                        <Image src="/testimonals/3.webp" width={60} height={60} alt="Image" className="border border-none rounded-full" />
                         <div>
                             <h3>Dhwani shah</h3>
                             <p>23 yo | Mumbai<span className='flex gap-[2px] h-10 w-[85px]'>
@@ -168,7 +168,7 @@ const Testimonial = () => {
              <SwiperSlide>             
                 <div className="text-white">
                       <div className="flex flex-row gap-[20px] items-center mb-[30px] ">
-                        <img src="/testimonals/4.webp" alt="img" width="60" className="border border-none rounded-full" />
+                        <Image src="/testimonals/4.webp" width={60} height={60} alt="Image" className="border border-none rounded-full" />
                         <div>
                             <h3>Urvashi Shah</h3>
                             <p>48 yo | Pune<span className='flex gap-[2px] h-10 w-[85px]'>

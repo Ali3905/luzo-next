@@ -4,12 +4,25 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+// import { Metadata } from "next";
+
+
+// export const metadata = {
+//     metadataBase: new URL('https://www.luzo.app'),
+  
+//     title: 'All Salons | LUZO',
+//     description: 'BBlunt is good salon | LUZO',
+//   }
 
 const Salon = () => {
 
+
     const [salon, setSalon] = useState(null)
     const { title } = useParams()
+    
 
+    
 
     // const pathname = usePathname()
 
@@ -217,7 +230,7 @@ const Salon = () => {
             {salon !== null ? <div>
                 {/* <Navbar /> */}
                 <div>
-                    <img src={salon.image} className="col-12 rounded-4 w-full h-[380px] object-cover" />
+                    <Image src={salon.image} alt='img' width={200} height={380} className="col-12 rounded-4 w-full h-[380px] object-cover" />
 
                     <div className="sm:px-[100px] px-[10px] sm:leading-[30px] ">
                         <h1 className="font-medium text-[50px] py-[20px] sm:mt-[10px]">{salon.name}</h1>
@@ -235,7 +248,7 @@ const Salon = () => {
                             {
                                 salon.branches.map((ele) => {
                                     return <div key={ele} className="border sm:w-[30%] text-[14px] border-[#B9B9B9] rounded px-[30px] py-[8px]  shadow-sm flex gap-[20px] items-center">
-                                        <img src="/img/pin.svg" height='20' width='20' /><p className="py-[10px]">{ele}</p></div>
+                                        <Image src="/img/pin.svg" alt='img' height={20} width={20} /><p className="py-[10px]">{ele}</p></div>
                                 })
                             }
                         </div>

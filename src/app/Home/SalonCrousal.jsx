@@ -8,7 +8,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-
+import Image from 'next/image';
 import Link from "next/link"
 
 const SalonCrousal = () => {
@@ -36,51 +36,51 @@ const SalonCrousal = () => {
             >
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/tip-and-toe' > <img src="/img/salons/1.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/bblunt'><img src="/img/salons/2.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/tip-and-toe' > <Image src="/img/salons/1.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/bblunt'><Image src="/img/salons/2.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/juice'><img src="/img/salons/3.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/femina-flaunt'><img src="/img/salons/4.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/juice'><Image src="/img/salons/3.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/femina-flaunt'><Image src="/img/salons/4.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/toni-and-guy'> <img src="/img/salons/5.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/tattva' ><img src="/img/salons/6.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/toni-and-guy'> <Image src="/img/salons/5.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/tattva' ><Image src="/img/salons/6.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/jcb'><img src="/img/salons/7.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/lookwell'> <img src="/img/salons/8.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/jcb'><Image src="/img/salons/7.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/lookwell'> <Image src="/img/salons/8.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/lemon'> <img src="/img/salons/9.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/bodycraft'> <img src="/img/salons/10.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/lemon'> <Image src="/img/salons/9.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/bodycraft'> <Image src="/img/salons/10.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/apple'> <img src="/img/salons/11.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/the-first'>  <img src="/img/salons/12.webp" alt='salon' className='aspect-video' />
+                        <Link href='/salon/apple'> <Image src="/img/salons/11.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/the-first'>  <Image src="/img/salons/12.webp" width={324} height={182} alt='salon' className='aspect-video' />
                         </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/harsha-and-rakesh'> <img src="/img/salons/13.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/jco'><img src="/img/salons/14.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/harsha-and-rakesh'> <Image src="/img/salons/13.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/jco'><Image src="/img/salons/14.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col gap-[20px]'>
-                        <Link href='/salon/fashiontv'> <img src="/img/salons/15.webp" alt='salon' className='aspect-video' /></Link>
-                        <Link href='/salon/kprive'>  <img src="/img/salons/16.webp" alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/fashiontv'> <Image src="/img/salons/15.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
+                        <Link href='/salon/kprive'>  <Image src="/img/salons/16.webp" width={324} height={182} alt='salon' className='aspect-video' /></Link>
                     </div>
                 </SwiperSlide>
 
@@ -92,9 +92,9 @@ const SalonCrousal = () => {
                 <button className='prev'><ChevronLeft /></button>
                 <div className=' flex flex-row gap-[20px] sm:gap-[100px]'>
 
-                    <p className='flex gap-[5px]'><img src="/img/pin.svg" height='20' width='20' />Banglore</p>
-                    <p className='flex gap-[5px]'><img src="/img/pin.svg" height='20' width='20' />Mumbai</p>
-                    <p className='flex gap-[5px]'><img src="/img/pin.svg" height='20' width='20' />Pune</p>
+                    <p className='flex gap-[5px]'><Image src="/img/pin.svg" width={20} height={20} alt='img'  />Banglore</p>
+                    <p className='flex gap-[5px]'><Image src="/img/pin.svg" width={20} height={20} alt='img'  />Mumbai</p>
+                    <p className='flex gap-[5px]'><Image src="/img/pin.svg" width={20} height={20} alt='img'  />Pune</p>
                 </div>
                 <button className='next '><ChevronRight /></button>
             </div>

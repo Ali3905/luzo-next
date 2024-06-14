@@ -13,7 +13,7 @@ const AboutLuzo = () => {
                 <p>All you have to do is simply Add to Cart and Book Now, and voila! It&apos;s time to unwind at the spa and adorn at the salon - now at the touch of a button. So put those freshly manicured fingers to good use - book your next appointment through the LUZO app.</p>
               </div>
          
-               <Image src="/img/download.webp" className="rounded xl sm:py-none py-[20px] lg:max-w-[50%] order-3 " alt="img" width={'636px'} height={'477px'}/>
+               <Image src="/img/download.webp" className="rounded xl sm:py-none py-[20px] lg:max-w-[50%] order-3 " alt="img" width={636} height={477}/>
         
         <DownloadLinks className={"my-[30px] sm:flex-start justify-center gap-[10px] order-2 sm:order-4"} />
         </div>

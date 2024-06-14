@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react'
 import { Play, X } from 'lucide-react'
+import Image from 'next/image'
 
 const HowToUse = () => {
     const modalRef = useRef(null)
@@ -28,7 +29,7 @@ const HowToUse = () => {
                     <span className='p-4 bg-white rounded-full shadow absolute top-[40%] left-[40%] cursor-pointer ' onClick={handleOpenModal}>
                         <Play />
                     </span>
-                    <img src='/img/how-to-use.webp' alt='img' className='sm:w-[600px] w-[300px] h-[191px] sm:h-[300px]' />
+                    <Image src='/img/how-to-use.webp' width={600} height={300} alt='img' className='sm:w-[600px] w-[300px] h-[191px] sm:h-[300px]' />
 
                 </div>
 

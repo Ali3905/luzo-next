@@ -10,7 +10,7 @@ import 'swiper/css';
 import "swiper/css/bundle"
 import CustomPagination from './CustomPagination';
 import { ArrowUpRight } from 'lucide-react'
-
+import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 
@@ -57,7 +57,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/tattva'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden '>
-                                <img src='/SalonPhotos/TattvaSpa.webp' alt='salon' className='aspect-video transform hover:scale-110 transition duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/TattvaSpa.webp' width={360} height={172}  alt='salon' className='aspect-video transform hover:scale-110 transition duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Tattva spa</h1>
                             </div>
                         </Link>
@@ -66,7 +66,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/bblunt'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/bblunt.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/bblunt.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>BBlunt</h1>
                             </div>
                         </Link>
@@ -75,7 +75,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/fashiontv'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/FTV.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/FTV.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Fashion TV</h1>
                             </div>
                         </Link>
@@ -84,7 +84,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/apple'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/Apple(The Original).webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/Apple(The Original).webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Apple</h1>
                             </div>
                         </Link>
@@ -93,7 +93,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/bodycraft'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/BodyCraft.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/BodyCraft.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>BodyCraft</h1>
                             </div>
                         </Link>
@@ -102,7 +102,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/cocomelon'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/Cocomelon.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/Cocomelon.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>CocoMelon</h1>
                             </div>
                         </Link>
@@ -111,7 +111,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/femina-flaunt'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/feminaflaunt.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/feminaflaunt.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Femina Flaunt</h1>
                             </div>
                         </Link>
@@ -120,7 +120,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/harsha-and-rakesh'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/HarshaRakesh.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/HarshaRakesh.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Harsha & Rakesh</h1>
                             </div>
                         </Link>
@@ -129,7 +129,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/jcb'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/JCB.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/JCB.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>JCB (Jean-Claude Biguine ) </h1>
                             </div>
                         </Link>
@@ -138,7 +138,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/the-first'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/TheFirst.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/TheFirst.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>The First </h1>
                             </div>
                         </Link>
@@ -147,7 +147,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/tip-and-toe'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/timntoe.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/timntoe.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Tip & Toe</h1>
                             </div>
                         </Link>
@@ -156,7 +156,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/toni-and-guy'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/toninguy.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/toninguy.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Toni & Guy </h1>
                             </div>
                         </Link>
@@ -166,7 +166,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/lookwell'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/LookWell.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/LookWell.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>LookWell </h1>
                             </div>
                         </Link>
@@ -176,7 +176,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/kprive'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/Kprive.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/Kprive.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Kprive </h1>
                             </div>
                         </Link>
@@ -186,7 +186,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/juice'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/juice,ghatkopar.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/juice,ghatkopar.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Juice </h1>
                             </div>
                         </Link>
@@ -196,7 +196,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/lemon'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/lemon.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/lemon.webp' alt='salon' width={360} height={172} className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>Lemon </h1>
                             </div>
                         </Link>
@@ -205,7 +205,7 @@ const PopularSalonsCrousal = () => {
                     <SwiperSlide>
                         <Link href='/salon/houseofbumble'>
                             <div className='flex flex-col gap-[20px] rounded-xl overflow-hidden'>
-                                <img src='/SalonPhotos/HouseOfBumble.webp' alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
+                                <Image src='/SalonPhotos/HouseOfBumble.webp' width={360} height={172} alt='salon' className='aspect-video transform hover:scale-110 transition  duration-300 ease-in-out' />
                                 <h1 className='text-white text-[30px] font-medium absolute bottom-0 left-0  px-4 py-2'>House Of Bumble </h1>
                             </div>
                         </Link>

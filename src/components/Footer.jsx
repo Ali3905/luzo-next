@@ -1,5 +1,6 @@
 import Link from "next/link"
 import DownloadLinks from "./DownloadLinks"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -15,23 +16,23 @@ const Footer = () => {
         <ul className="flex flex-col gap-[20px]">
           <h1 className="text-[16px] font-semibold">Social</h1>
           <Link target="_blank" href='https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Finstagram.com%2Fluzo.app%3Figshid%3DYmMyMTA2M2Y%253D%26__coig_ufac%3D1'>
-            <li className="flex items-center gap-[10px]"><img src="/img/instagram.svg" width='25' alt="instagram" />Instagram</li>
+            <li className="flex items-center gap-[10px]"><Image src="/img/instagram.svg" width='25' height='21'  alt="instagram" />Instagram</li>
           </Link>
           <Link target="_blank" href='https://www.linkedin.com/company/salonsurf/posts/?feedView=all'>
-            <li className="flex items-center gap-[10px]"><img src="/img/linkedin.svg" width='25' alt="instagram" />linkedin</li>
+            <li className="flex items-center gap-[10px]"><Image src="/img/linkedin.svg" width='25' height='21' alt="instagram" />linkedin</li>
 
           </Link>
           <Link target="_blank" href='https://www.facebook.com/luzoapp/'>
-            <li className="flex items-center gap-[10px]"><img src="/img/facebook.svg" width='25' alt="instagram" />Facebook</li>
+            <li className="flex items-center gap-[10px]"><Image src="/img/facebook.svg" width='25' height='21' alt="instagram" />Facebook</li>
 
           </Link>
           <Link target="_blank" href='https://www.youtube.com/channel/UCKOrqE0xVXIdgw1S50gq_vg'>
-            <li className="flex items-center gap-[10px]"><img src="/img/youtube.svg" width='25' alt="instagram" />Youtube</li>
+            <li className="flex items-center gap-[10px]"><Image src="/img/youtube.svg" width='25' height='21' alt="instagram" />Youtube</li>
 
           </Link>
 
           <Link target="_blank" href='https://x.com/luzo_app?s=11&t=W_nfHtVga_uF3WIz70N1sg&mx=2'>
-            <li className="flex items-center gap-[10px]"><img src="/img/twitter.svg" width='25' alt="instagram" />Twitter</li>
+            <li className="flex items-center gap-[10px]"><Image src="/img/twitter.svg" width='25' height='21' alt="instagram" />Twitter</li>
 
           </Link>
 
@@ -44,12 +45,12 @@ const Footer = () => {
           <Link target="_blank" href='https://api.whatsapp.com/send?phone=917738182493'>  <li>WhatsApp</li></Link>
           <Link target="_blank" href='mailhref:info@luzo.app'>   <li className="">Email</li></Link>
           {/* <div className="flex flex-col gap-[10px] sm:hidden">
-            <Link href='/loading'><img src="/img/appshrefre.webp" alt="img" width='150' /></Link>
-            <Link href='/loading'><img src="/img/playshrefre.webp" alt="img" width='150' /></Link>
+            <Link href='/loading'><Image src="/Image/appshrefre.webp" alt="Image" width='150' /></Link>
+            <Link href='/loading'><Image src="/Image/playshrefre.webp" alt="Image" width='150' /></Link>
           </div>
           <div className="sm:flex flex-col gap-[10px] hidden">
-            <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><img src="/img/appshrefre.webp" alt="img" width='150' /></Link>
-            <Link target="_blank" href='https://play.google.com/shrefre/apps/details?id=com.salon_surf&pli=1'><img src="/img/playshrefre.webp" alt="img" width='150' /></Link>
+            <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><Image src="/Image/appshrefre.webp" alt="Image" width='150' /></Link>
+            <Link target="_blank" href='https://play.google.com/shrefre/apps/details?id=com.salon_surf&pli=1'><Image src="/Image/playshrefre.webp" alt="Image" width='150' /></Link>
           </div> */}
           <DownloadLinks className={"flex-col"} />
         </ul>
