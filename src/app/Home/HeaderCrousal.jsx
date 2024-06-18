@@ -11,10 +11,10 @@ const HeaderCrousal = () => {
             <Swiper
                 modules={[Autoplay, EffectFade]}
                 slidesPerView={1}
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false
-                }}
+                // autoplay={{
+                //     delay: 4000,
+                //     disableOnInteraction: false
+                // }}
                 loop={true}
                 effect='fade'
             >

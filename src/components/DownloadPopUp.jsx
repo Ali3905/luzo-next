@@ -12,11 +12,11 @@ const DownloadPopUp = () => {
 
 
   return (
-    <div className={`bg-black w-full fixed bottom-[1%] z-20 text-white flex items-center justify-between gap-[2px] py-4 px-2 ${showDownload?"visible":"invisible"} transition sm:hidden`}>
+    <div className={`bg-black w-full fixed bottom-[0%] z-20 text-white flex items-center justify-between gap-[2px] py-4 px-2 ${showDownload?"visible":"invisible"} transition sm:hidden`}>
     <button onClick={()=>setShowDownload(false)}><X/></button>
-    <Image src="/img/icon.webp" height={20} width={20} alt="logo" className='w-[20px] aspect-square' />
+    <Image src="/img/icon.webp" height={20} width={20} alt="logo" className='w-[30px] aspect-square' />
     <p className='whitespace-nowrap text-[13px]'>Download and book the luzo</p>
-    <button className='bg-blue-300 rounded-md p-2'><Link href={"/loading"}>DownLoad</Link></button>
+    <button className='popup_btn_gradient rounded-md p-2'><Link href={"/loading"}>DownLoad</Link></button>
   </div>
   )
 }

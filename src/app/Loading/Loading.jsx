@@ -63,8 +63,8 @@ const Loading = () => {
     return <div className='flex flex-col justify-center items-center px-4 py-4 sm:pt-[30vh] h-screen'>
       <Image src='/img/icon.webp' alt='logo' height={50} width={50} />
       <h1 className='text-[30px]'>LUZO</h1>
-      <p className='text-[16px]'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
-      <p className='text-[16px]'>Redirecting</p>
+      <p className='text-[16px] text-center'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
+      <p className='text-[16px] text-center'>Redirecting...</p>
       <div className='flex flex-row gap-[10px] pt-[10px] cursor-pointer'>
         {/* <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><Image src='/img/appstore.webp' alt='app store' width={150} /></Link> */}
         <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><Image src='/img/playstore.webp' alt='playstore' width={150} height={75} /></Link>
@@ -75,8 +75,8 @@ const Loading = () => {
     return <div className='flex flex-col justify-center items-center px-4 py-4 sm:pt-[30vh] h-screen'>
       <Image src='/img/icon.webp' alt='logo' height={50} width={50} />
       <h1 className='text-[30px]'>LUZO</h1>
-      <p className='text-[16px]'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
-      <p className='text-[16px] font-semibold'>Redirecting...</p>
+      <p className='text-[16px] text-center'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
+      <p className='text-[16px] font-semibold text-center'>Redirecting...</p>
       <div className='flex flex-row gap-[10px] pt-[10px] cursor-pointer'>
         <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><Image src='/img/appstore.webp' alt='app store' width={150} height={75} /></Link>
         {/* <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><Image src='/img/playstore.webp' alt='playstore' width={150} /></Link> */}
@@ -88,8 +88,8 @@ const Loading = () => {
   return (
     <div className='flex flex-col justify-center items-center px-4 py-4 sm:pt-[30vh] h-screen'>
       <Image src='/img/icon.webp' alt='logo' height={50} width={50} />
-      <h1 className='text-[30px]'>LUZO</h1>
-      <p className='text-[16px]'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
+      <h1 className='text-[30px] text-center'>LUZO</h1>
+      <p className='text-[16px] text-center'>Book your appointment at 200+ salons and spas with exclusive offers via LUZO</p>
       <div className='flex flex-row gap-[10px] pt-[10px] cursor-pointer'>
         <Link target="_blank" href='https://apps.apple.com/in/app/luzo-luxury-you-aspire/id1594592604'><Image src='/img/appstore.webp' alt='app store' width={150} height={75} /></Link>
         <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1'><Image src='/img/playstore.webp' alt='playstore' width={150} height={75} /></Link>

@@ -14,7 +14,7 @@ import Link from "next/link"
 const SalonCrousal = () => {
     return (
         <div className=' px-[10px] my-[30px] sm:my-[60px] 2xl:max-w-[1300px] xl:max-w-[1200px] lg:max-w-[1000px] sm:mx-auto'>
-            <h1 className='font-bold text-[30px] text-[#051036]'>200+ Salons and Spas</h1>
+            <h1 className='font-bold text-[30px] text-[#051036]'>500+ Salons and Spas</h1>
             {/* <div> */}
             <Swiper
                 slidesPerView={3}
